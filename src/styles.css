@@ -95,7 +95,7 @@ body {
 
 .js-pacman-playground .splash a.start {
     position: relative;
-    top: 65%;
+    top:73%;
     text-transform: uppercase;
     font-size: 1.6em;
 }
@@ -118,16 +118,29 @@ body {
 }
 
 .js-pacman-playground .splash p span {
-    color : #FFFF00;
+    color : #ffcc00;
 }
 
 .js-pacman-playground .splash .keys {
     position: absolute;
-    top: 85%;
+    top: 79%;
     left: 0;
     right: 0;
     text-align: center;
     color: #FFF;
+}
+
+.js-pacman-playground .splash .keys .left-arrow {
+    transform: rotate(-90deg);
+    transform-origin: center center;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.js-pacman-playground .splash .keys .right-arrow {
+    transform: rotate(90deg);
+    transform-origin: center center;
+    display: inline-block;
 }
 
 .js-pacman-playground .splash .credits {
@@ -146,7 +159,7 @@ body {
 }
 
 .js-pacman-playground .splash .credits a {
-    color: #FFFF00;
+    color: #ffcc00;
 }
 
 .js-pacman-playground .splash .credits a:hover {

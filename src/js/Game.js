@@ -648,6 +648,12 @@ class JsPacman extends Game {
             if (this._paused) this.pause();
             else this.resume();
         }
+        // Start Game on enter.
+        else if (event.keyCode === 13) {
+            // if (this._gameOver) {
+                this.startLevel();
+            // }
+        }
     }
 
     _onChangeScore(model, score) {
@@ -703,12 +709,12 @@ class JsPacman extends Game {
             <div class="sound-status on" style="display: none"><span class="wrap">SOUND: <span class="on">ON</span><span class="off">OFF</span></span></div>
             <div class="paused" style="display: none"><span class="wrap">PAUSED</span></div>
             <div class="splash">
-                <span class="title">"JS PAC-MAN"</span>
-                <p class="nerd">HTML - CSS<br><br><span>JAVASCRIPT</span></p>
+                <span class="title" style="display: none;">"JS PAC-MAN"</span>
+                <p class="nerd" style="display: none;">HTML - CSS<br><br><span>JAVASCRIPT</span></p>
                 <a class="start" style="display: none">START</a>
                 <div class="loadbar"><div class="inner"></div></div>
-                <p class="keys"><span>&larr;&uarr;&darr;&rarr;</span>:MOVE <span>S</span>:SOUND <span>P</span>:PAUSE</p>
-                <div class="credits">&#169; 2014-${new Date().getFullYear()} <span>8</span>TENTACULOS <a href="https://github.com/8tentaculos/jsPacman">SOURCE+INFO</a></div>
+                <p class="keys"><span><span class="left-arrow">&uarr;</span>&uarr;&darr;<span class="right-arrow">&uarr;</span></span>:MOVE <span>S</span>:SOUND <span>P</span>:PAUSE</p>
+                <div class="credits">Forked from <span>8</span>TENTACULOS <a href="https://github.com/8tentaculos/jsPacman">jsPacman</a></div>
             </div>
         `;
     }
