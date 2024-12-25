@@ -1,6 +1,6 @@
 {
-    "name": "jsPacman",
-    "short_name": "jsPacman",
+    "name": "pacRoot",
+    "short_name": "pacRoot",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
